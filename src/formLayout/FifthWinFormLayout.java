@@ -1,4 +1,4 @@
-package FormLayout;
+package formLayout;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -12,7 +12,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.ColumnConstraints;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.RowConstraints;
-import Instance.TableItem;
+import instance.TableItem;
 
 
 public class FifthWinFormLayout extends WinFormLayout {

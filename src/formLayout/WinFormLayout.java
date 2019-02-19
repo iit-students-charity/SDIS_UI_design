@@ -1,4 +1,4 @@
-package FormLayout;
+package formLayout;
 
 import javafx.scene.layout.GridPane;
 

@@ -1,4 +1,4 @@
-package FormLayout;
+package formLayout;
 
 import javafx.scene.layout.ColumnConstraints;
 import javafx.scene.layout.RowConstraints;
@@ -6,13 +6,16 @@ import javafx.scene.layout.RowConstraints;
 public class MainWinFormLayout extends WinFormLayout {
     private FourthWinFormLayout fourthWFL;
     private FifthWinFormLayout fifthWFL;
+    private ThirdWinFormLayout thirdWFL;
 
 
-    public MainWinFormLayout(FourthWinFormLayout fourthWFL, FifthWinFormLayout fifthWFL) {
+    public MainWinFormLayout(ThirdWinFormLayout thirdWFL, FourthWinFormLayout fourthWFL, FifthWinFormLayout fifthWFL) {
         super(50, 35, 2,3);
 
+        setThirdWFL(thirdWFL);
         setFourthWFL(fourthWFL);
         setFifthWFL(fifthWFL);
+
 
         ColumnConstraints column_1 = new ColumnConstraints();
         column_1.setPercentWidth(columnWidthPercents);
@@ -27,24 +30,13 @@ public class MainWinFormLayout extends WinFormLayout {
 
         root_GridPane.add(fourthWFL.getRoot_GridPane(), 0,0);
         root_GridPane.add(fifthWFL.getRoot_GridPane(), 1,0);
+        root_GridPane.add(thirdWFL.getRoot_GridPane(), 0,1);
 
         root_GridPane.setGridLinesVisible(true);
     }
 
-    void setFourthWFL(FourthWinFormLayout fourthWFL) throws NullPointerException {
-        if (fourthWFL == null) {
-            throw new NullPointerException(WFL_NULL_EXP_TEXT);
-        }
-
-        this.fourthWFL = fourthWFL;
-    }
-
-    void setFifthWFL(FifthWinFormLayout fifthWFL) throws NullPointerException {
-        if (fifthWFL == null) {
-            throw new NullPointerException(WFL_NULL_EXP_TEXT);
-        }
-
-        this.fifthWFL = fifthWFL;
+    public ThirdWinFormLayout getThirdWFL() {
+        return thirdWFL;
     }
 
     public FourthWinFormLayout getFourthWFL() {
@@ -53,5 +45,29 @@ public class MainWinFormLayout extends WinFormLayout {
 
     public FifthWinFormLayout getFifthWFL() {
         return fifthWFL;
+    }
+
+    private void setThirdWFL(ThirdWinFormLayout thirdWFL) throws NullPointerException {
+        if (thirdWFL == null) {
+            throw new NullPointerException(WFL_NULL_EXP_TEXT);
+        }
+
+        this.thirdWFL = thirdWFL;
+    }
+
+    private void setFourthWFL(FourthWinFormLayout fourthWFL) throws NullPointerException {
+        if (fourthWFL == null) {
+            throw new NullPointerException(WFL_NULL_EXP_TEXT);
+        }
+
+        this.fourthWFL = fourthWFL;
+    }
+
+    private void setFifthWFL(FifthWinFormLayout fifthWFL) throws NullPointerException {
+        if (fifthWFL == null) {
+            throw new NullPointerException(WFL_NULL_EXP_TEXT);
+        }
+
+        this.fifthWFL = fifthWFL;
     }
 }

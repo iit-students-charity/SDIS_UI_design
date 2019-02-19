@@ -1,4 +1,4 @@
-package FormLayout;
+package formLayout;
 
 import javafx.geometry.HPos;
 import javafx.geometry.Insets;

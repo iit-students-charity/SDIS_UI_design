@@ -1,6 +1,6 @@
-package Controller;
+package controller;
 
-import FormLayout.WinFormLayout;
+import formLayout.WinFormLayout;
 
 class WinFormController {
     final String EXP_WFL_NULL = "WinFormLayout is null";

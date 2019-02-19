@@ -1,7 +1,7 @@
-package Controller;
+package controller;
 
-import FormLayout.FifthWinFormLayout;
-import Instance.TableItem;
+import formLayout.FifthWinFormLayout;
+import instance.TableItem;
 
 import javafx.event.ActionEvent;
 

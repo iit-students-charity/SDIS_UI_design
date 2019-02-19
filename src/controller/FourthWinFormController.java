@@ -1,6 +1,6 @@
-package Controller;
+package controller;
 
-import FormLayout.FourthWinFormLayout;
+import formLayout.FourthWinFormLayout;
 
 import javafx.event.ActionEvent;
 
@@ -12,7 +12,7 @@ import java.util.List;
 
 public class FourthWinFormController extends WinFormController {
     private final String DIALOG_TITLE = "Error";
-    private final String DIALOG_TEXT = "No such checkbox";
+    private final String DIALOG_TEXT = "No such check box";
 
 
     public FourthWinFormController(FourthWinFormLayout mainWFL) throws NullPointerException {
@@ -48,6 +48,5 @@ public class FourthWinFormController extends WinFormController {
 
             mainWFL.getCheckBoxNameTxtFld().clear();
         });
-
     }
 }
