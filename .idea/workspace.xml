@@ -2,7 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Controllers/MainWinFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/MainWinFormController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/FourthWinFormController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/WinFormController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FormLayout/FourthWinFormLayout.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FormLayout/MainWinFormLayout.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FormLayout/WinFormLayout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SDIS_UI_design/Controllers/MainWinFormController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SDIS_UI_design/sample/Classes/Item.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SDIS_UI_design/sample/Classes/MainApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SDIS_UI_design/sample/Classes/MainApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SDIS_UI_design/sample/Classes/MainWinFormLayout.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/MainWinFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/FifthWinFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Classes/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Instance/TableItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Classes/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Classes/MainApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Classes/MainWinFormLayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FormLayout/FifthWinFormLayout.java" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -63,8 +76,34 @@
       <file leaf-file-name="MainApp.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Classes/MainApp.java">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="30" column="64" lean-forward="true" selection-start-line="30" selection-start-column="64" selection-end-line="30" selection-end-column="64" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1316#1317#0" expanded="true" />
+                <element signature="e#1344#1345#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TableItem.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Instance/TableItem.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainWinFormLayout.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/FormLayout/MainWinFormLayout.java">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="459">
-              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+              <caret line="30" column="46" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -72,11 +111,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Item.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/Classes/Item.java">
+      <file leaf-file-name="WinFormLayout.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/FormLayout/WinFormLayout.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="23" lean-forward="true" selection-start-column="23" selection-end-column="23" />
+            <state relative-caret-position="102">
+              <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FifthWinFormLayout.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/FormLayout/FifthWinFormLayout.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="633">
+              <caret line="79" column="53" selection-start-line="79" selection-start-column="53" selection-end-line="79" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -84,13 +132,36 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainWinFormController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Controllers/MainWinFormController.java">
+      <file leaf-file-name="FourthWinFormController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controller/FourthWinFormController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="34" column="13" lean-forward="true" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+            <state relative-caret-position="848">
+              <caret line="58" column="33" lean-forward="true" selection-start-line="58" selection-start-column="33" selection-end-line="58" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WinFormController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Controller/WinFormController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FourthWinFormLayout.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/FormLayout/FourthWinFormLayout.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="406">
+              <caret line="85" column="33" lean-forward="true" selection-start-line="85" selection-start-column="33" selection-end-line="85" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3219#3220#0" expanded="true" />
+                <element signature="e#3255#3256#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -127,9 +198,22 @@
         <option value="$PROJECT_DIR$/src/Controllers/MainWinFrameController.java" />
         <option value="$PROJECT_DIR$/src/sample/Classes/MainWinForm.java" />
         <option value="$PROJECT_DIR$/src/sample/Classes/MainWinFormLayout.java" />
-        <option value="$PROJECT_DIR$/src/sample/Classes/MainApp.java" />
         <option value="$PROJECT_DIR$/src/sample/Classes/Item.java" />
         <option value="$PROJECT_DIR$/src/Controllers/MainWinFormController.java" />
+        <option value="$PROJECT_DIR$/src/Instance/Item.java" />
+        <option value="$PROJECT_DIR$/src/Instance/TableItem.java" />
+        <option value="$PROJECT_DIR$/src/Instance/CheckBoxItem.java" />
+        <option value="$PROJECT_DIR$/src/FormLayout/FifthWinFormLayout.java" />
+        <option value="$PROJECT_DIR$/src/Controllers/FifthWinFormController.java" />
+        <option value="$PROJECT_DIR$/src/Controllers/FourthWinFormController.java" />
+        <option value="$PROJECT_DIR$/src/FormLayout/FourthWinFormLayout.java" />
+        <option value="$PROJECT_DIR$/src/Controller/FourthWinFormController.java" />
+        <option value="$PROJECT_DIR$/src/FormLayout/WinFormGridPane.java" />
+        <option value="$PROJECT_DIR$/src/FormLayout/WinForm.java" />
+        <option value="$PROJECT_DIR$/src/FormLayout/WinFormLayout.java" />
+        <option value="$PROJECT_DIR$/src/sample/Classes/MainApp.java" />
+        <option value="$PROJECT_DIR$/src/FormLayout/MainWinFormLayout.java" />
+        <option value="$PROJECT_DIR$/src/Controller/WinFormController.java" />
       </list>
     </option>
   </component>
@@ -174,7 +258,19 @@
               <item name="SDIS_UI_design" type="b2602c69:ProjectViewProjectNode" />
               <item name="SDIS_UI_design" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SDIS_UI_design" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SDIS_UI_design" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="FormLayout" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SDIS_UI_design" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SDIS_UI_design" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Instance" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SDIS_UI_design" type="b2602c69:ProjectViewProjectNode" />
@@ -314,12 +410,12 @@
       <workItem from="1550258770685" duration="4649000" />
       <workItem from="1550431740875" duration="26539000" />
       <workItem from="1550548734197" duration="2830000" />
-      <workItem from="1550558680347" duration="3553000" />
+      <workItem from="1550558680347" duration="17058000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43011000" />
+    <option name="totallyTimeSpent" value="56516000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -335,12 +431,13 @@
       <window_info anchor="right" id="Maven Projects" order="4" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="12" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2646121" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2646121" />
       <window_info anchor="bottom" id="Terminal" order="14" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.20729166" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.20729166" />
       <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32943678" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="3" />
@@ -350,7 +447,6 @@
       <window_info anchor="right" id="JetGradle" order="6" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32943678" />
       <window_info anchor="bottom" id="Changes" order="7" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Profiler" order="9" />
@@ -370,6 +466,11 @@
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="3" />
+    </breakpoint-manager>
+  </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
@@ -385,7 +486,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Classes/Item.java">
+    <entry file="file://$PROJECT_DIR$/src/Instance/TableItem.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="799">
           <caret line="54" column="31" lean-forward="true" selection-start-line="54" selection-start-column="31" selection-end-line="54" selection-end-column="31" />
@@ -395,7 +496,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controllers/MainWinFormController.java">
+    <entry file="file://$PROJECT_DIR$/src/Controller/FifthWinFormController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="765">
           <caret line="50" column="32" lean-forward="true" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="32" />
@@ -415,7 +516,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Classes/MainWinFormLayout.java">
+    <entry file="file://$PROJECT_DIR$/src/FormLayout/FifthWinFormLayout.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2227">
           <caret line="131" column="16" lean-forward="true" selection-start-line="131" selection-start-column="16" selection-end-line="131" selection-end-column="16" />
@@ -443,7 +544,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Classes/Item.java">
+    <entry file="file://$PROJECT_DIR$/src/Instance/TableItem.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="10" column="31" lean-forward="true" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
@@ -466,7 +567,7 @@
     <entry file="file://$PROJECT_DIR$/src/sample/sample.fxml" />
     <entry file="file://$PROJECT_DIR$/src/sample/Controllers/MainWinFormController.java" />
     <entry file="file://$PROJECT_DIR$/src/sample/Scenes/sample.fxml" />
-    <entry file="file://$PROJECT_DIR$/src/sample/Classes/Item.java">
+    <entry file="file://$PROJECT_DIR$/src/Instance/TableItem.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
@@ -536,61 +637,98 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Classes/MainWinFormLayout.java">
+    <entry file="file://$PROJECT_DIR$/src/Instance/CheckBoxItem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2266">
-          <caret line="155" column="5" selection-start-line="155" selection-start-column="5" selection-end-line="155" selection-end-column="5" />
+        <state relative-caret-position="136">
+          <caret line="13" column="20" lean-forward="true" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/FifthWinFormController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3966#3967#0" expanded="true" />
-            <element signature="e#3993#3994#0" expanded="true" />
-            <element signature="e#4061#4062#0" expanded="true" />
-            <element signature="e#4098#4099#0" expanded="true" />
-            <element signature="e#4059#4060#0" expanded="true" />
-            <element signature="e#4094#4095#0" expanded="true" />
-            <element signature="e#4485#4486#0" expanded="true" />
-            <element signature="e#4517#4518#0" expanded="true" />
-            <element signature="e#4485#4486#0" expanded="true" />
-            <element signature="e#4519#4520#0" expanded="true" />
-            <element signature="e#4494#4495#0" expanded="true" />
-            <element signature="e#4529#4530#0" expanded="true" />
-            <element signature="e#4141#4142#0" expanded="true" />
-            <element signature="e#4173#4174#0" expanded="true" />
-            <element signature="e#4567#4568#0" expanded="true" />
-            <element signature="e#4600#4601#0" expanded="true" />
-            <element signature="e#4653#4654#0" expanded="true" />
-            <element signature="e#4684#4685#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FormLayout/FifthWinFormLayout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="633">
+          <caret line="79" column="53" selection-start-line="79" selection-start-column="53" selection-end-line="79" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FormLayout/FourthWinFormLayout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="85" column="33" lean-forward="true" selection-start-line="85" selection-start-column="33" selection-end-line="85" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3219#3220#0" expanded="true" />
+            <element signature="e#3255#3256#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FormLayout/WinFormLayout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Instance/TableItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Classes/MainApp.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="30" column="64" lean-forward="true" selection-start-line="30" selection-start-column="64" selection-end-line="30" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1316#1317#0" expanded="true" />
+            <element signature="e#1344#1345#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FormLayout/MainWinFormLayout.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+          <caret line="30" column="46" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Classes/Item.java">
+    <entry file="file://$PROJECT_DIR$/src/Controller/FourthWinFormController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="23" lean-forward="true" selection-start-column="23" selection-end-column="23" />
+        <state relative-caret-position="848">
+          <caret line="58" column="33" lean-forward="true" selection-start-line="58" selection-start-column="33" selection-end-line="58" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controllers/MainWinFormController.java">
+    <entry file="file://$PROJECT_DIR$/src/Controller/WinFormController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="34" column="13" lean-forward="true" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="51">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
         </state>
       </provider>
     </entry>

@@ -1,23 +1,21 @@
-package Controllers;
+package Controller;
 
-import sample.Classes.Item;
-import sample.Classes.MainWinFormLayout;
+import FormLayout.FifthWinFormLayout;
+import Instance.TableItem;
 
 import javafx.event.ActionEvent;
 
-import javafx.scene.control.*;
 
+public class FifthWinFormController {
 
-public class MainWinFormController {
-
-    private final String EXP_MWFL_NULL = "MainWinFormLayout is null";
+    private final String EXP_MWFL_NULL = "FifthWinFormLayout is null";
     private final String DIALOG_TITLE = "Error";
     private final String DIALOG_TEXT = "Data required";
 
-    private MainWinFormLayout mainWFL;
+    private FifthWinFormLayout mainWFL;
 
 
-    public MainWinFormController(MainWinFormLayout mainWFL) throws NullPointerException {
+    public FifthWinFormController(FifthWinFormLayout mainWFL) throws NullPointerException {
         if (mainWFL == null) {
             throw new NullPointerException(EXP_MWFL_NULL);
         }
@@ -29,24 +27,24 @@ public class MainWinFormController {
             String text = this.mainWFL.getItemNameTxtFld().getText();
 
             if (text.length() > 0) {
-                Item item = new Item(text);
+                TableItem item = new TableItem(text);
 
                 this.mainWFL.getItemList().add(item);
             }
-            else {
+            /*else {
                 Alert alert = new Alert(Alert.AlertType.INFORMATION);
                 alert.setTitle(DIALOG_TITLE);
                 alert.setHeaderText(null);
                 alert.setContentText(DIALOG_TEXT);
 
                 alert.showAndWait();
-            }
+            }*/
 
             this.mainWFL.getItemNameTxtFld().clear();
         });
 
         this.mainWFL.getToRightBtn().setOnAction((ActionEvent event) -> {
-            Item item = this.mainWFL.getItemTable().getSelectionModel().getSelectedItem();
+            TableItem item = this.mainWFL.getItemTable().getSelectionModel().getSelectedItem();
 
             if (item != null) {
                 item.mainToEmpty();
@@ -54,7 +52,7 @@ public class MainWinFormController {
         });
 
         this.mainWFL.getToLeftBtn().setOnAction((ActionEvent event) -> {
-            Item item = this.mainWFL.getItemTable().getSelectionModel().getSelectedItem();
+            TableItem item = this.mainWFL.getItemTable().getSelectionModel().getSelectedItem();
 
             if (item != null) {
                 item.emptyToMain();

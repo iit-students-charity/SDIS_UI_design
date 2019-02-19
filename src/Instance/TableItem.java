@@ -1,9 +1,9 @@
-package sample.Classes;
+package Instance;
 
 import javafx.beans.property.StringProperty;
 import javafx.beans.property.SimpleStringProperty;
 
-public class Item {
+public class TableItem {
 
     private final String EMPTY_STRING = "";
 
@@ -11,13 +11,13 @@ public class Item {
     private StringProperty emptyName;
 
 
-    public Item(String name) {
+    public TableItem(String name) {
         this.mainName = new SimpleStringProperty(name);
         emptyName = new SimpleStringProperty(EMPTY_STRING);
     }
 
 
-    public Item() {
+    public TableItem() {
         this(null);
     }
 
