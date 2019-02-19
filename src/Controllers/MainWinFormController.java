@@ -45,14 +45,20 @@ public class MainWinFormController {
             this.mainWFL.getItemNameTxtFld().clear();
         });
 
-
         this.mainWFL.getToRightBtn().setOnAction((ActionEvent event) -> {
-            this.mainWFL.getItemList().get(0).mainToEmpty();
+            Item item = this.mainWFL.getItemTable().getSelectionModel().getSelectedItem();
+
+            if (item != null) {
+                item.mainToEmpty();
+            }
         });
 
-
         this.mainWFL.getToLeftBtn().setOnAction((ActionEvent event) -> {
-            this.mainWFL.getItemList().get(0).emptyToMain();
+            Item item = this.mainWFL.getItemTable().getSelectionModel().getSelectedItem();
+
+            if (item != null) {
+                item.emptyToMain();
+            }
         });
     }
 }
