@@ -1,9 +1,6 @@
 package sample.Classes;
 
-import formLayout.FifthWinFormLayout;
-import formLayout.FourthWinFormLayout;
-import formLayout.MainWinFormLayout;
-import formLayout.ThirdWinFormLayout;
+import formLayout.*;
 import javafx.application.Application;
 
 import javafx.stage.Stage;
@@ -24,10 +21,12 @@ public class MainApp extends Application {
         primaryStage.setWidth(WINFORM_WIDTH);
         primaryStage.setHeight(WINFORM_HEIGHT);
 
-        ThirdWinFormLayout thirdWFL = new ThirdWinFormLayout();
-        FourthWinFormLayout fourthWFL = new FourthWinFormLayout();
-        FifthWinFormLayout fifthWFLL = new FifthWinFormLayout();
-        MainWinFormLayout mainWFL = new MainWinFormLayout(thirdWFL, fourthWFL, fifthWFLL);
+        FirstForm firstF = new FirstForm();
+        SecondForm secondF = new SecondForm();
+        ThirdForm thirdF = new ThirdForm();
+        FourthForm fourthF = new FourthForm();
+        FifthForm fifthF = new FifthForm();
+        MainForm mainWFL = new MainForm(firstF, secondF, thirdF, fourthF, fifthF);
 
         Scene mainScene = new Scene(mainWFL.getRoot_GridPane());
         primaryStage.setScene(mainScene);

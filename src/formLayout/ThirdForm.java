@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class ThirdWinFormLayout extends WinFormLayout {
+public class ThirdForm extends Form {
     private final int INSETS_MARGIN_SIZE = 10;
     private final String FIND_CHECK_BOX_BUTTON_TEXT = "Find radio button";
     private final String CHECK_BOX_1_TEXT = "One";
@@ -32,8 +32,8 @@ public class ThirdWinFormLayout extends WinFormLayout {
 
     private List<RadioButton> radioButtons;
 
-    public ThirdWinFormLayout() {
-        super(50, 25, 2, 2);
+    public ThirdForm() {
+        super(50, 25, 2, 4);
 
         ColumnConstraints column_1 = new ColumnConstraints();
         column_1.setPercentWidth(columnWidthPercents);
@@ -105,19 +105,5 @@ public class ThirdWinFormLayout extends WinFormLayout {
 
             radioButtonNameTxtFld.clear();
         });
-    }
-
-
-
-    public TextField getRadioButtonNameTxtFld() {
-        return radioButtonNameTxtFld;
-    }
-
-    public Button getFindRadioButtonBtn() {
-        return findRadioButtonBtn;
-    }
-
-    public List<RadioButton> getRadioButtons() {
-        return radioButtons;
     }
 }

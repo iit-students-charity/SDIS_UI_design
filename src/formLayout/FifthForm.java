@@ -16,7 +16,7 @@ import javafx.scene.layout.RowConstraints;
 import instance.TableItem;
 
 
-public class FifthWinFormLayout extends WinFormLayout {
+public class FifthForm extends Form {
     private final String CREATE_ITEM_BUTTON_TEXT = "Create item";
     private final String TO_LEFT_BUTTON_TEXT = "To left";
     private final String TO_RIGHT_BUTTON_TEXT = "To right";
@@ -42,7 +42,7 @@ public class FifthWinFormLayout extends WinFormLayout {
     private ObservableList<TableItem> itemList = FXCollections.observableArrayList();
 
 
-    public FifthWinFormLayout() {
+    public FifthForm() {
         super(50, 20, 2, 3);
 
         createItemBtn = new Button(CREATE_ITEM_BUTTON_TEXT);

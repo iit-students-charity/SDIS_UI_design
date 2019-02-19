@@ -14,7 +14,7 @@ import javafx.scene.layout.RowConstraints;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FourthWinFormLayout extends WinFormLayout {
+public class FourthForm extends Form {
     private final int INSETS_MARGIN_SIZE = 10;
     private final String FIND_CHECK_BOX_BUTTON_TEXT = "Find check box";
     private final String CHECK_BOX_1_TEXT = "One";
@@ -31,7 +31,7 @@ public class FourthWinFormLayout extends WinFormLayout {
 
     private List<CheckBox> checkBoxes;
 
-    public FourthWinFormLayout() {
+    public FourthForm() {
         super(50, 25, 2, 2);
 
         ColumnConstraints column_1 = new ColumnConstraints();

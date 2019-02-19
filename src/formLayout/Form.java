@@ -2,9 +2,9 @@ package formLayout;
 
 import javafx.scene.layout.GridPane;
 
-public class WinFormLayout {
+public class Form {
     final int FULL_PERCENTS_NUMBER = 100;
-    final String WFL_NULL_EXP_TEXT = "WinFormLayout is null";
+    static final String WFL_NULL_EXP_TEXT = "Form is null";
 
     int columnWidthPercents;
     int rowsHeightPercents;
@@ -14,7 +14,7 @@ public class WinFormLayout {
     GridPane root_GridPane;
 
 
-    public WinFormLayout() {
+    public Form() {
         root_GridPane = new GridPane();
 
         columnWidthPercents = 1;
@@ -23,7 +23,7 @@ public class WinFormLayout {
         numberOfRows = 1;
     }
 
-    public WinFormLayout(int cwp, int rhp, int noc, int nor) {
+    public Form(int cwp, int rhp, int noc, int nor) {
         this();
 
         columnWidthPercents = cwp;
