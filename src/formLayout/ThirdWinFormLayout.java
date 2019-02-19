@@ -1,12 +1,10 @@
 package formLayout;
 
+import javafx.event.ActionEvent;
 import javafx.geometry.HPos;
 import javafx.geometry.Insets;
-import javafx.scene.control.Button;
-import javafx.scene.control.RadioButton;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 
-import javafx.scene.control.ToggleGroup;
 import javafx.scene.layout.ColumnConstraints;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.RowConstraints;
@@ -14,12 +12,15 @@ import javafx.scene.layout.RowConstraints;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class ThirdWinFormLayout extends WinFormLayout {
     private final int INSETS_MARGIN_SIZE = 10;
     private final String FIND_CHECK_BOX_BUTTON_TEXT = "Find radio button";
     private final String CHECK_BOX_1_TEXT = "One";
     private final String CHECK_BOX_2_TEXT = "Two";
     private final String CHECK_BOX_3_TEXT = "Three";
+    private final String DIALOG_TITLE = "Error";
+    private final String DIALOG_TEXT = "No such radio button";
 
     private TextField radioButtonNameTxtFld;
     private Button findRadioButtonBtn;
@@ -76,6 +77,34 @@ public class ThirdWinFormLayout extends WinFormLayout {
         root_GridPane.add(radioButton1, 0, 1, 2,1);
         root_GridPane.add(radioButton2, 0, 2, 2,1);
         root_GridPane.add(radioButton3, 0, 3, 2,1);
+
+        findRadioButtonBtn.setOnAction((ActionEvent event) -> {
+
+            if (radioButtonNameTxtFld.getText().length() > 0) {
+                boolean isThereSameRB = false;
+
+                for(int i = 0; i < radioButtons.size(); i++) {
+                    RadioButton thisCheckBox = radioButtons.get(i);
+                    isThereSameRB = (thisCheckBox.getText().equals(radioButtonNameTxtFld.getText()));
+
+                    if (isThereSameRB) {
+                        thisCheckBox.setSelected(true);
+                        break;
+                    }
+                }
+
+                if (!isThereSameRB) {
+                    Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                    alert.setTitle(DIALOG_TITLE);
+                    alert.setHeaderText(null);
+                    alert.setContentText(DIALOG_TEXT);
+
+                    alert.showAndWait();
+                }
+            }
+
+            radioButtonNameTxtFld.clear();
+        });
     }
 
 
@@ -86,10 +115,6 @@ public class ThirdWinFormLayout extends WinFormLayout {
 
     public Button getFindRadioButtonBtn() {
         return findRadioButtonBtn;
-    }
-
-    public ToggleGroup getToggleGroup() {
-        return toggleGroup;
     }
 
     public List<RadioButton> getRadioButtons() {

@@ -21,17 +21,6 @@ public class TableItem {
         this(null);
     }
 
-
-    public String getMainName() {
-        return mainName.get();
-    }
-
-
-    public void setMainName(String mainName) {
-        this.mainName.set(mainName);
-    }
-
-
     public StringProperty mainNameProperty() {
         if (mainName == null) mainName = new SimpleStringProperty(this, EMPTY_STRING);
         return mainName;

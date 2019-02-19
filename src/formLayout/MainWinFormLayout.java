@@ -28,23 +28,12 @@ public class MainWinFormLayout extends WinFormLayout {
         root_GridPane.getRowConstraints().add(row_1);
         root_GridPane.getRowConstraints().add(row_1);
 
-        root_GridPane.add(fourthWFL.getRoot_GridPane(), 0,0);
-        root_GridPane.add(fifthWFL.getRoot_GridPane(), 1,0);
         root_GridPane.add(thirdWFL.getRoot_GridPane(), 0,1);
+        root_GridPane.add(fourthWFL.getRoot_GridPane(), 1,1);
+        root_GridPane.add(fifthWFL.getRoot_GridPane(), 0,2);
+
 
         root_GridPane.setGridLinesVisible(true);
-    }
-
-    public ThirdWinFormLayout getThirdWFL() {
-        return thirdWFL;
-    }
-
-    public FourthWinFormLayout getFourthWFL() {
-        return fourthWFL;
-    }
-
-    public FifthWinFormLayout getFifthWFL() {
-        return fifthWFL;
     }
 
     private void setThirdWFL(ThirdWinFormLayout thirdWFL) throws NullPointerException {

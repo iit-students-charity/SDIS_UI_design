@@ -1,7 +1,9 @@
 package formLayout;
 
+import javafx.event.ActionEvent;
 import javafx.geometry.HPos;
 import javafx.geometry.Insets;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.TextField;
@@ -18,6 +20,8 @@ public class FourthWinFormLayout extends WinFormLayout {
     private final String CHECK_BOX_1_TEXT = "One";
     private final String CHECK_BOX_2_TEXT = "Two";
     private final String CHECK_BOX_3_TEXT = "Three";
+    private final String DIALOG_TITLE = "Error";
+    private final String DIALOG_TEXT = "No such check box";
 
     private TextField checkBoxNameTxtFld;
     private Button findCheckBoxBtn;
@@ -67,19 +71,37 @@ public class FourthWinFormLayout extends WinFormLayout {
         root_GridPane.add(checkBox1, 0, 1, 2,1);
         root_GridPane.add(checkBox2, 0, 2, 2,1);
         root_GridPane.add(checkBox3, 0, 3, 2,1);
-    }
 
+        findCheckBoxBtn.setOnAction((ActionEvent event) -> {
 
+            if (checkBoxNameTxtFld.getText().length() > 0) {
+                boolean isThereSameCB = false;
 
-    public TextField getCheckBoxNameTxtFld() {
-        return checkBoxNameTxtFld;
+                for(int i = 0; i < checkBoxes.size(); i++) {
+                    CheckBox thisCheckBox = checkBoxes.get(i);
+                    isThereSameCB = (thisCheckBox.getText().equals(checkBoxNameTxtFld.getText()));
+
+                    if (isThereSameCB) {
+                        thisCheckBox.setSelected(!thisCheckBox.isSelected());
+                        break;
+                    }
+                }
+
+                if (!isThereSameCB) {
+                    Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                    alert.setTitle(DIALOG_TITLE);
+                    alert.setHeaderText(null);
+                    alert.setContentText(DIALOG_TEXT);
+
+                    alert.showAndWait();
+                }
+            }
+
+            checkBoxNameTxtFld.clear();
+        });
     }
 
     public Button getFindCheckBoxBtn() {
         return findCheckBoxBtn;
-    }
-
-    public List<CheckBox> getCheckBoxes() {
-        return checkBoxes;
     }
 }

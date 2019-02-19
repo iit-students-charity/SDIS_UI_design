@@ -1,9 +1,5 @@
 package sample.Classes;
 
-import controller.FourthWinFormController;
-import controller.FifthWinFormController;
-
-import controller.ThirdWinFormController;
 import formLayout.FifthWinFormLayout;
 import formLayout.FourthWinFormLayout;
 import formLayout.MainWinFormLayout;
@@ -23,8 +19,7 @@ public class MainApp extends Application {
 
 
     @Override
-    public void start(Stage primaryStage) throws Exception {
-
+    public void start(Stage primaryStage) {
         primaryStage.setTitle(WINFORM_NAME);
         primaryStage.setWidth(WINFORM_WIDTH);
         primaryStage.setHeight(WINFORM_HEIGHT);
@@ -34,20 +29,10 @@ public class MainApp extends Application {
         FifthWinFormLayout fifthWFLL = new FifthWinFormLayout();
         MainWinFormLayout mainWFL = new MainWinFormLayout(thirdWFL, fourthWFL, fifthWFLL);
 
-        ThirdWinFormController thirdWFC = new ThirdWinFormController(thirdWFL);
-        FourthWinFormController fourthWFC = new FourthWinFormController(fourthWFL);
-        FifthWinFormController fifthWFC = new FifthWinFormController(fifthWFLL);
-
         Scene mainScene = new Scene(mainWFL.getRoot_GridPane());
         primaryStage.setScene(mainScene);
-
-
-
-
-
         primaryStage.show();
     }
-
 
     public static void main(String[] args) {
         launch(args);

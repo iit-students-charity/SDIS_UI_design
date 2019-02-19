@@ -3,6 +3,7 @@ package formLayout;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
+import javafx.event.ActionEvent;
 import javafx.geometry.HPos;
 import javafx.geometry.Insets;
 
@@ -16,7 +17,6 @@ import instance.TableItem;
 
 
 public class FifthWinFormLayout extends WinFormLayout {
-
     private final String CREATE_ITEM_BUTTON_TEXT = "Create item";
     private final String TO_LEFT_BUTTON_TEXT = "To left";
     private final String TO_RIGHT_BUTTON_TEXT = "To right";
@@ -93,37 +93,34 @@ public class FifthWinFormLayout extends WinFormLayout {
         root_GridPane.add(toRightBtn, 1, 2);
 
         itemTable.setItems(itemList);
-    }
 
-    public TextField getItemNameTxtFld() {
-        return itemNameTxtFld;
-    }
+        createItemBtn.setOnAction((ActionEvent event) -> {
 
-    public Button getCreateItemBtn() {
-        return createItemBtn;
-    }
+            String text = itemNameTxtFld.getText();
 
-    public TableView<TableItem> getItemTable() {
-        return itemTable;
-    }
+            if (text.length() > 0) {
+                TableItem item = new TableItem(text);
 
-    public TableColumn<TableItem, String> getFirstColumn() {
-        return firstColumn;
-    }
+               itemList.add(item);
+            }
 
-    public TableColumn<TableItem, String> getSecondColumn() {
-        return secondColumn;
-    }
+            itemNameTxtFld.clear();
+        });
 
-    public Button getToLeftBtn() {
-        return toLeftBtn;
-    }
+        toRightBtn.setOnAction((ActionEvent event) -> {
+            TableItem item = itemTable.getSelectionModel().getSelectedItem();
 
-    public Button getToRightBtn() {
-        return toRightBtn;
-    }
+            if (item != null) {
+                item.mainToEmpty();
+            }
+        });
 
-    public ObservableList<TableItem> getItemList() {
-        return itemList;
+        toLeftBtn.setOnAction((ActionEvent event) -> {
+            TableItem item = itemTable.getSelectionModel().getSelectedItem();
+
+            if (item != null) {
+                item.emptyToMain();
+            }
+        });
     }
 }
