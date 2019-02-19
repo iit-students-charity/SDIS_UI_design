@@ -31,7 +31,7 @@ public class MainWinFormLayout extends WinFormLayout {
         root_GridPane.setGridLinesVisible(true);
     }
 
-    public void setFourthWFL(FourthWinFormLayout fourthWFL) throws NullPointerException {
+    void setFourthWFL(FourthWinFormLayout fourthWFL) throws NullPointerException {
         if (fourthWFL == null) {
             throw new NullPointerException(WFL_NULL_EXP_TEXT);
         }
@@ -39,11 +39,19 @@ public class MainWinFormLayout extends WinFormLayout {
         this.fourthWFL = fourthWFL;
     }
 
-    public void setFifthWFL(FifthWinFormLayout fifthWFL) throws NullPointerException {
+    void setFifthWFL(FifthWinFormLayout fifthWFL) throws NullPointerException {
         if (fifthWFL == null) {
             throw new NullPointerException(WFL_NULL_EXP_TEXT);
         }
 
         this.fifthWFL = fifthWFL;
+    }
+
+    public FourthWinFormLayout getFourthWFL() {
+        return fourthWFL;
+    }
+
+    public FifthWinFormLayout getFifthWFL() {
+        return fifthWFL;
     }
 }

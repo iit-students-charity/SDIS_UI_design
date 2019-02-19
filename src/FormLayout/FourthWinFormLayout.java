@@ -79,18 +79,6 @@ public class FourthWinFormLayout extends WinFormLayout {
         return findCheckBoxBtn;
     }
 
-    public CheckBox getCheckBox1() {
-        return checkBox1;
-    }
-
-    public CheckBox getCheckBox2() {
-        return checkBox2;
-    }
-
-    public CheckBox getCheckBox3() {
-        return checkBox3;
-    }
-
     public List<CheckBox> getCheckBoxes() {
         return checkBoxes;
     }

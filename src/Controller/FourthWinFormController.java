@@ -10,20 +10,17 @@ import javafx.scene.control.Alert;
 
 import java.util.List;
 
-public class FourthWinFormController {
-    private final String EXP_MWFL_NULL = "FourthWinFormLayout is null";
+public class FourthWinFormController extends WinFormController {
     private final String DIALOG_TITLE = "Error";
     private final String DIALOG_TEXT = "No such checkbox";
-
-    private FourthWinFormLayout mainWFL;
 
 
     public FourthWinFormController(FourthWinFormLayout mainWFL) throws NullPointerException {
         setMainWFL(mainWFL);
 
-        this.mainWFL.getFindCheckBoxBtn().setOnAction((ActionEvent event) -> {
+        mainWFL.getFindCheckBoxBtn().setOnAction((ActionEvent event) -> {
 
-            TextField textField = this.mainWFL.getCheckBoxNameTxtFld();
+            TextField textField = mainWFL.getCheckBoxNameTxtFld();
             List<CheckBox> checkBoxes = mainWFL.getCheckBoxes();
 
             if (textField.getText().length() > 0) {
@@ -49,16 +46,8 @@ public class FourthWinFormController {
                 }
             }
 
-            this.mainWFL.getCheckBoxNameTxtFld().clear();
+            mainWFL.getCheckBoxNameTxtFld().clear();
         });
 
-    }
-
-    public void setMainWFL(FourthWinFormLayout mainWFL) {
-        if (mainWFL == null) {
-            throw new NullPointerException(EXP_MWFL_NULL);
-        }
-
-        this.mainWFL = mainWFL;
     }
 }
