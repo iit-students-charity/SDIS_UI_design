@@ -13,10 +13,17 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.ColumnConstraints;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.RowConstraints;
-import instance.TableItem;
+import item.TableItem;
 
 
-public class FifthForm extends Form {
+public class FifthForm {
+    GridPane root_GridPane;
+
+    int columnWidthPercents = 50;
+    int rowsHeightPercents = 20;
+    int numberOfRows = 3;
+    int FULL_PERCENTS_NUMBER = 100;
+
     private final String CREATE_ITEM_BUTTON_TEXT = "Create item";
     private final String TO_LEFT_BUTTON_TEXT = "To left";
     private final String TO_RIGHT_BUTTON_TEXT = "To right";
@@ -43,7 +50,7 @@ public class FifthForm extends Form {
 
 
     public FifthForm() {
-        super(50, 20, 2, 3);
+        root_GridPane = new GridPane();
 
         createItemBtn = new Button(CREATE_ITEM_BUTTON_TEXT);
         toLeftBtn = new Button(TO_LEFT_BUTTON_TEXT);
@@ -122,5 +129,9 @@ public class FifthForm extends Form {
                 item.emptyToMain();
             }
         });
+    }
+
+    public GridPane getRoot_GridPane() {
+        return root_GridPane;
     }
 }

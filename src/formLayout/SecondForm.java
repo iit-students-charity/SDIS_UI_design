@@ -12,7 +12,12 @@ import javafx.scene.layout.ColumnConstraints;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.RowConstraints;
 
-public class SecondForm extends Form {
+public class SecondForm {
+    GridPane root_GridPane;
+
+    int columnWidthPercents = 50;
+    int rowsHeightPercents = 50;
+
     private final int INSETS_MARGIN_SIZE = 20;
     private final String APPLY_NAME_BUTTON_TEXT = "Apply name";
     private final String CHANGE_NAMES_BUTTON_TEXT = "Change names";
@@ -22,7 +27,7 @@ public class SecondForm extends Form {
     private Button changeNamesButton;
 
     public SecondForm() {
-        super(50, 50, 2, 2);
+        root_GridPane = new GridPane();
 
         ColumnConstraints column_1 = new ColumnConstraints();
         column_1.setPercentWidth(columnWidthPercents);
@@ -47,6 +52,8 @@ public class SecondForm extends Form {
         GridPane.setHalignment(changeNamesButton, HPos.CENTER);
 
         GridPane.setMargin(nameTxtFld, new Insets(INSETS_MARGIN_SIZE));
+        GridPane.setMargin(applyNameButton, new Insets(INSETS_MARGIN_SIZE / 2));
+        GridPane.setMargin(changeNamesButton, new Insets(INSETS_MARGIN_SIZE / 2));
 
 
         applyNameButton.setOnAction((ActionEvent e) -> {
@@ -62,5 +69,9 @@ public class SecondForm extends Form {
             applyNameButton.setText(changeNamesButton.getText());
             changeNamesButton.setText(applyNameButtonTxt);
         });
+    }
+
+    public GridPane getRoot_GridPane() {
+        return root_GridPane;
     }
 }

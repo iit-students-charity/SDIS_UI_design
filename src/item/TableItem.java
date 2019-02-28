@@ -1,4 +1,4 @@
-package instance;
+package item;
 
 import javafx.beans.property.StringProperty;
 import javafx.beans.property.SimpleStringProperty;
@@ -16,7 +16,6 @@ public class TableItem {
         emptyName = new SimpleStringProperty(EMPTY_STRING);
     }
 
-
     public TableItem() {
         this(null);
     }
@@ -26,23 +25,20 @@ public class TableItem {
         return mainName;
     }
 
-
     public StringProperty emptyNameProperty() {
         if (emptyName == null) emptyName = new SimpleStringProperty(this, EMPTY_STRING);
         return emptyName;
     }
 
-
     public void mainToEmpty() {
-        if (emptyName.get() == EMPTY_STRING) {
+        if (emptyName.get().equals(EMPTY_STRING)) {
             emptyName.set(mainName.get());
             mainName.set(EMPTY_STRING);
         }
     }
 
-
     public void emptyToMain() {
-        if (emptyName.get() != EMPTY_STRING) {
+        if (!emptyName.get().equals(EMPTY_STRING)) {
             mainName.set(emptyName.get());
             emptyName.set(EMPTY_STRING);
         }

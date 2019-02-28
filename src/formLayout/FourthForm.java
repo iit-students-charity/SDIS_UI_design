@@ -14,7 +14,12 @@ import javafx.scene.layout.RowConstraints;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FourthForm extends Form {
+public class FourthForm {
+    GridPane root_GridPane;
+
+    int columnWidthPercents = 50;
+    int rowsHeightPercents = 25;
+
     private final int INSETS_MARGIN_SIZE = 10;
     private final String FIND_CHECK_BOX_BUTTON_TEXT = "Find check box";
     private final String CHECK_BOX_1_TEXT = "One";
@@ -32,7 +37,7 @@ public class FourthForm extends Form {
     private List<CheckBox> checkBoxes;
 
     public FourthForm() {
-        super(50, 25, 2, 2);
+        root_GridPane = new GridPane();
 
         ColumnConstraints column_1 = new ColumnConstraints();
         column_1.setPercentWidth(columnWidthPercents);
@@ -103,5 +108,9 @@ public class FourthForm extends Form {
 
     public Button getFindCheckBoxBtn() {
         return findCheckBoxBtn;
+    }
+
+    public GridPane getRoot_GridPane() {
+        return root_GridPane;
     }
 }

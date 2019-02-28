@@ -13,7 +13,12 @@ import javafx.scene.layout.ColumnConstraints;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.RowConstraints;
 
-public class FirstForm extends Form {
+public class FirstForm {
+    GridPane root_GridPane;
+
+    int columnWidthPercents = 100;
+    int rowsHeightPercents = 35;
+
     private final int INSETS_MARGIN_SIZE = 20;
     private final String ADD_ITEM_BUTTON_TEXT = "Add item";
     private final String DIALOG_TITLE = "Error";
@@ -26,7 +31,7 @@ public class FirstForm extends Form {
     private ObservableList<String> comboBoxItems;
 
     public FirstForm() {
-        super(100, 35, 1, 3);
+        root_GridPane = new GridPane();
 
         ColumnConstraints column_1 = new ColumnConstraints();
         column_1.setPercentWidth(columnWidthPercents);
@@ -80,5 +85,9 @@ public class FirstForm extends Form {
                 }
             }
         });
+    }
+
+    public GridPane getRoot_GridPane() {
+        return root_GridPane;
     }
 }
